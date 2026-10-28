@@ -1,0 +1,3 @@
+import SITE from '../../lib/site'
+export const dynamic='force-static'
+export function GET(){return new Response(`# ${SITE.name}\n\n> ${SITE.description}\n\nBuildSmart is a price comparison tool for building materials sold by hardware stores in Juja, Thika, Ruiru and Nairobi, Kenya. Prices are supplied by hardware owners and are estimates. Buyers pay the hardware directly.\n\n## Pages\n- [Home](${SITE.url}/): compare prices and calculate a project total\n- [Privacy Policy](${SITE.url}/privacy)\n- [Terms and Conditions](${SITE.url}/terms)\n- [Cookie Policy](${SITE.url}/cookies)\n- [Refund Policy](${SITE.url}/refund)\n`,{headers:{'Content-Type':'text/plain; charset=utf-8'}})}

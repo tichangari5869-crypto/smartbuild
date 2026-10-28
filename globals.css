@@ -1,0 +1,8 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+html{font-size:clamp(15px,.85rem + .35vw,20px);-webkit-text-size-adjust:100%}
+body{background:#F3F6FB;color:#0F172A}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid #1D4ED8;outline-offset:2px}
+.btn{@apply rounded-xl px-4 py-3 font-semibold text-center transition active:scale-[.98] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2}
+.card{@apply bg-white rounded-2xl border border-slate-200 p-4 min-w-0 break-words}
+.inp{@apply w-full rounded-xl border border-slate-300 px-3 py-3 bg-white focus:border-buyer focus:outline-none}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
